@@ -288,7 +288,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
                     ? String.format("%d:%02d", mTime.hour, mTime.minute)
                     : String.format("%d:%02d", mTime.hour, mTime.minute, mTime.second);
             canvas.drawText(text, bounds.width() / 2, mYOffset, mTextPaint);
-            canvas.drawLine(bounds.width() / 2 - 50, mYOffset + 90, bounds.width() / 2 + 50, mYOffset + 90, mTextPaint);
+            canvas.drawLine(bounds.width() / 2 - 50, mYOffset + 80, bounds.width() / 2 + 50, mYOffset + 80, mTextPaint);
             if(currentDate != null) {
                 canvas.drawText(currentDate, bounds.width() / 2, mYOffset + 50, mTextPaint);
             }
